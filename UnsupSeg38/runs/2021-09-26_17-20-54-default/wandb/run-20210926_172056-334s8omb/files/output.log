@@ -1,0 +1,108 @@
+/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:23: RuntimeWarning: You have defined a `val_dataloader()` and have defined a `validation_step()`, you may also want to define `validation_epoch_end()` for accumulating stats.
+  warnings.warn(*args, **kwargs)
+/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:23: RuntimeWarning: You have defined a `test_dataloader()` and have defined a `test_step()`, you may also want to define `test_epoch_end()` for accumulating stats.
+  warnings.warn(*args, **kwargs)
+MODEL:
+learning features from raw wav
+prediction steps: [1]
+------------------------------------------------------------------------------------------
+added libri (0 examples)
+------------------------------------------------------------------------------------------
+DATA:
+train: /home/bryce/PycharmProjects/EnsemblePhoneme/UnsupSeg38/imit_restructured/train
+	+/data/felix/datasets/librispeech (0)
+valid: /home/bryce/PycharmProjects/EnsemblePhoneme/UnsupSeg38/imit_restructured/train (0)
+test: /home/bryce/PycharmProjects/EnsemblePhoneme/UnsupSeg38/imit_restructured/test (0)
+------------------------------------------------------------------------------------------
+optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.0002
+    weight_decay: 0.0005
+)
+------------------------------------------------------------------------------------------
+   | Name             | Type                | Params
+-----------------------------------------------------
+0  | NFC              | NextFrameClassifier | 1 M
+1  | NFC.enc          | Sequential          | 1 M
+2  | NFC.enc.0        | Conv1d              | 2 K
+3  | NFC.enc.1        | BatchNorm1d         | 512
+4  | NFC.enc.2        | LeakyReLU           | 0
+5  | NFC.enc.3        | Conv1d              | 524 K
+6  | NFC.enc.4        | BatchNorm1d         | 512
+7  | NFC.enc.5        | LeakyReLU           | 0
+8  | NFC.enc.6        | Conv1d              | 262 K
+9  | NFC.enc.7        | BatchNorm1d         | 512
+10 | NFC.enc.8        | LeakyReLU           | 0
+11 | NFC.enc.9        | Conv1d              | 262 K
+12 | NFC.enc.10       | BatchNorm1d         | 512
+13 | NFC.enc.11       | LeakyReLU           | 0
+14 | NFC.enc.12       | Conv1d              | 262 K
+15 | NFC.enc.13       | LambdaLayer         | 0
+16 | NFC.enc.z_proj   | Sequential          | 16 K
+17 | NFC.enc.z_proj.0 | Dropout2d           | 0
+18 | NFC.enc.z_proj.1 | Linear              | 16 K
+Traceback (most recent call last):
+  File "/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/code.py", line 90, in runcode
+    exec(code, self.locals)
+  File "<input>", line 1, in <module>
+  File "/snap/pycharm-professional/256/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py", line 198, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "/snap/pycharm-professional/256/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/home/bryce/PycharmProjects/EnsemblePhoneme/UnsupSeg38/main.py", line 78, in <module>
+    main()
+  File "/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/hydra/main.py", line 20, in decorated_main
+    run_hydra(
+  File "/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/hydra/_internal/utils.py", line 171, in run_hydra
+    hydra.run(
+  File "/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/hydra/_internal/hydra.py", line 82, in run
+    return run_job(
+  File "/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/hydra/plugins/common/utils.py", line 109, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/home/bryce/PycharmProjects/EnsemblePhoneme/UnsupSeg38/main.py", line 62, in main
+    trainer.fit(solver)
+  File "/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 853, in fit
+    self.dp_train(model)
+  File "/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/trainer/distrib_parts.py", line 578, in dp_train
+    self.run_pretrain_routine(model)
+  File "/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1015, in run_pretrain_routine
+    self.train()
+  File "/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/trainer/training_loop.py", line 308, in train
+    self.reset_train_dataloader(model)
+  File "/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/trainer/data_loading.py", line 156, in reset_train_dataloader
+    self.train_dataloader = self.request_dataloader(model.train_dataloader)
+  File "/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/trainer/data_loading.py", line 280, in request_dataloader
+    dataloader = dataloader_fx()
+  File "/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/core/decorators.py", line 13, in inner_fx
+    return fn(self)
+  File "/home/bryce/PycharmProjects/EnsemblePhoneme/UnsupSeg38/solver.py", line 87, in train_dataloader
+    self.train_loader = DataLoader(self.train_dataset,
+  File "/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 270, in __init__
+    sampler = RandomSampler(dataset, generator=generator)  # type: ignore[arg-type]
+  File "/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/torch/utils/data/sampler.py", line 102, in __init__
+    raise ValueError("num_samples should be a positive integer "
+ValueError: num_samples should be a positive integer value, but got num_samples=0
+[2021-09-26 17:21:01,574][lightning][INFO] -
+   | Name             | Type                | Params
+-----------------------------------------------------
+0  | NFC              | NextFrameClassifier | 1 M
+1  | NFC.enc          | Sequential          | 1 M
+2  | NFC.enc.0        | Conv1d              | 2 K
+3  | NFC.enc.1        | BatchNorm1d         | 512
+4  | NFC.enc.2        | LeakyReLU           | 0
+5  | NFC.enc.3        | Conv1d              | 524 K
+6  | NFC.enc.4        | BatchNorm1d         | 512
+7  | NFC.enc.5        | LeakyReLU           | 0
+8  | NFC.enc.6        | Conv1d              | 262 K
+9  | NFC.enc.7        | BatchNorm1d         | 512
+10 | NFC.enc.8        | LeakyReLU           | 0
+11 | NFC.enc.9        | Conv1d              | 262 K
+12 | NFC.enc.10       | BatchNorm1d         | 512
+13 | NFC.enc.11       | LeakyReLU           | 0
+14 | NFC.enc.12       | Conv1d              | 262 K
+15 | NFC.enc.13       | LambdaLayer         | 0
+16 | NFC.enc.z_proj   | Sequential          | 16 K
+17 | NFC.enc.z_proj.0 | Dropout2d           | 0

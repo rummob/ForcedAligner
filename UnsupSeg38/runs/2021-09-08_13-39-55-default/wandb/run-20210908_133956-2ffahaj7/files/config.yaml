@@ -1,0 +1,144 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.0
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.11
+    start_time: 1631079596
+    t:
+      1:
+      - 1
+      - 5
+      - 9
+      2:
+      - 1
+      - 5
+      - 9
+      4: 3.8.11
+      5: 0.12.0
+      8:
+      - 5
+batch_shuffle:
+  desc: null
+  value: false
+batch_size:
+  desc: null
+  value: 8
+buckeye_path:
+  desc: null
+  value: /data/felix/datasets/buckeye_processed_by_speaker_balanced
+buckeye_percent:
+  desc: null
+  value: 1.0
+ckpt:
+  desc: null
+  value: null
+cosine_coef:
+  desc: null
+  value: 1.0
+data:
+  desc: null
+  value: timit
+dataloader_n_workers:
+  desc: null
+  value: 10
+dev_run:
+  desc: null
+  value: false
+early_stop_metric:
+  desc: null
+  value: val_max_rval
+early_stop_mode:
+  desc: null
+  value: max
+epochs:
+  desc: null
+  value: 200
+exp_name:
+  desc: null
+  value: default
+gpus:
+  desc: null
+  value: 1
+grad_clip:
+  desc: null
+  value: 0.5
+host:
+  desc: null
+  value: bryce-ubuntu
+latent_dim:
+  desc: null
+  value: 0
+libri_path:
+  desc: null
+  value: /data/felix/datasets/librispeech
+libri_percent:
+  desc: null
+  value: 1.0
+libri_subset:
+  desc: null
+  value: train-clean-100
+lr:
+  desc: null
+  value: 0.0002
+lr_anneal_gamma:
+  desc: null
+  value: 1.0
+lr_anneal_step:
+  desc: null
+  value: 1000
+momentum:
+  desc: null
+  value: 0.9
+n_negatives:
+  desc: null
+  value: 1
+optimizer:
+  desc: null
+  value: adam
+overfit_pct:
+  desc: null
+  value: 1
+pred_offset:
+  desc: null
+  value: 0
+pred_steps:
+  desc: null
+  value: 1
+project:
+  desc: null
+  value: unsupervised_segmentor
+seed:
+  desc: null
+  value: 100
+tag:
+  desc: null
+  value: default
+timit_path:
+  desc: null
+  value: /home/bryce/PycharmProjects/UnsupSeg38/timit_restructured
+val_check_interval:
+  desc: null
+  value: 0.2
+val_ratio:
+  desc: null
+  value: 0.1
+wd:
+  desc: null
+  value: /home/bryce/PycharmProjects/UnsupSeg38/runs/2021-09-08_13-39-55-default
+z_dim:
+  desc: null
+  value: 256
+z_proj:
+  desc: null
+  value: 64
+z_proj_dropout:
+  desc: null
+  value: 0
+z_proj_linear:
+  desc: null
+  value: true

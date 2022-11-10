@@ -1,0 +1,307 @@
+MODEL:
+learning features from raw wav
+prediction steps: [1]
+------------------------------------------------------------------------------------------
+added libri (0 examples)
+------------------------------------------------------------------------------------------
+DATA:
+train: /home/bryce/PycharmProjects/UnsupSeg38/timit_restructured/train
+	+/data/felix/datasets/librispeech (2164)
+valid: /home/bryce/PycharmProjects/UnsupSeg38/timit_restructured/train (241)
+test: /home/bryce/PycharmProjects/UnsupSeg38/timit_restructured/test (1595)
+------------------------------------------------------------------------------------------
+optimizer: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.0002
+    weight_decay: 0.0005
+)
+------------------------------------------------------------------------------------------
+/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:23: RuntimeWarning: You have defined a `val_dataloader()` and have defined a `validation_step()`, you may also want to define `validation_epoch_end()` for accumulating stats.
+  warnings.warn(*args, **kwargs)
+/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:23: RuntimeWarning: You have defined a `test_dataloader()` and have defined a `test_step()`, you may also want to define `test_epoch_end()` for accumulating stats.
+  warnings.warn(*args, **kwargs)
+[2021-09-26 16:45:34,889][lightning][INFO] -
+   | Name             | Type                | Params
+-----------------------------------------------------
+0  | NFC              | NextFrameClassifier | 1 M
+1  | NFC.enc          | Sequential          | 1 M
+2  | NFC.enc.0        | Conv1d              | 2 K
+3  | NFC.enc.1        | BatchNorm1d         | 512
+4  | NFC.enc.2        | LeakyReLU           | 0
+5  | NFC.enc.3        | Conv1d              | 524 K
+6  | NFC.enc.4        | BatchNorm1d         | 512
+7  | NFC.enc.5        | LeakyReLU           | 0
+8  | NFC.enc.6        | Conv1d              | 262 K
+9  | NFC.enc.7        | BatchNorm1d         | 512
+10 | NFC.enc.8        | LeakyReLU           | 0
+11 | NFC.enc.9        | Conv1d              | 262 K
+12 | NFC.enc.10       | BatchNorm1d         | 512
+13 | NFC.enc.11       | LeakyReLU           | 0
+14 | NFC.enc.12       | Conv1d              | 262 K
+15 | NFC.enc.13       | LambdaLayer         | 0
+16 | NFC.enc.z_proj   | Sequential          | 16 K
+17 | NFC.enc.z_proj.0 | Dropout2d           | 0
+18 | NFC.enc.z_proj.1 | Linear              | 16 K
+Epoch 1:   4% 19/426 [00:01<00:40, 10.03it/s, loss=0.314, v_num=0]
+   | Name             | Type                | Params
+-----------------------------------------------------
+0  | NFC              | NextFrameClassifier | 1 M
+1  | NFC.enc          | Sequential          | 1 M
+2  | NFC.enc.0        | Conv1d              | 2 K
+3  | NFC.enc.1        | BatchNorm1d         | 512
+4  | NFC.enc.2        | LeakyReLU           | 0
+5  | NFC.enc.3        | Conv1d              | 524 K
+6  | NFC.enc.4        | BatchNorm1d         | 512
+7  | NFC.enc.5        | LeakyReLU           | 0
+8  | NFC.enc.6        | Conv1d              | 262 K
+9  | NFC.enc.7        | BatchNorm1d         | 512
+10 | NFC.enc.8        | LeakyReLU           | 0
+11 | NFC.enc.9        | Conv1d              | 262 K
+12 | NFC.enc.10       | BatchNorm1d         | 512
+13 | NFC.enc.11       | LeakyReLU           | 0
+14 | NFC.enc.12       | Conv1d              | 262 K
+15 | NFC.enc.13       | LambdaLayer         | 0
+16 | NFC.enc.z_proj   | Sequential          | 16 K
+17 | NFC.enc.z_proj.0 | Dropout2d           | 0
+Epoch 1:  20% 84/426 [00:03<00:15, 21.91it/s, loss=0.283, v_num=0]------------------------------------------------------------------------------------------
+calculating metrics using 241 entries 7.77it/s]
+best peak detection params: (1, 0.01, None) (width, prominence, distance)
+saving for test - cpc_1 - {'prominence': 0.01, 'width': 1, 'distance': None, 'epoch': 0}
+	train_nfc_loss                 -- 0.295182384274624
+	val_nfc_loss                   -- 0.532804024796332
+	epoch                          -- 1
+	current_lr                     -- 0.0002
+	timit_libri_val_cpc_1_f1       -- 0.7531532136037563
+	timit_libri_val_cpc_1_precision -- 0.7686746978690666
+	timit_libri_val_cpc_1_recall   -- 0.7382557625725796
+	timit_libri_val_cpc_1_rval     -- 0.7890912790607334
+	timit_libri_val_cpc_1_max_rval -- 0.7890912790607334
+	timit_libri_val_cpc_1_max_rval_epoch -- 0
+	val_max_rval                   -- 0.7890912790607334
+------------------------------------------------------------------------------------------
+Epoch 1:  20% 85/426 [00:12<00:48,  7.05it/s, l[2021-09-26 16:45:46,951][lightning][INFO] -
+Epoch 00000: val_max_rval reached 0.78909 (best 0.78909), saving model to /home/bryce/PycharmProjects/UnsupSeg38/runs/2021-09-26_16-45-28-default/epoch=0.ckpt as top 1
+Epoch 1:  29% 123/426 [00:13<00:34,  8.83it/s, loss=0.254, v_num=0]
+/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:23: RuntimeWarning: The metric you returned 0.7890912790607334 must be a Torch.Tensor instance, checkpoint not saved HINT: what is the value of val_max_rval in validation_end()?
+  warnings.warn(*args, **kwargs)
+Epoch 1:  37% 159/426 [00:15<00:25, 10.47it/s, ------------------------------------------------------------------------------------------
+calculating metrics using 241 entries 7.02it/s]
+best peak detection params: (None, 0.04, None) (width, prominence, distance)
+saving for test - cpc_1 - {'prominence': 0.04, 'width': None, 'distance': None, 'epoch': 0}
+	train_nfc_loss                 -- 0.25782722676241837
+	val_nfc_loss                   -- 0.5450572794483554
+	epoch                          -- 1
+	current_lr                     -- 0.0002
+	timit_libri_val_cpc_1_f1       -- 0.8162885685072867
+	timit_libri_val_cpc_1_precision -- 0.8203167070771122
+	timit_libri_val_cpc_1_recall   -- 0.8123096989861791
+	timit_libri_val_cpc_1_rval     -- 0.8431205184662022
+	timit_libri_val_cpc_1_max_rval -- 0.8431205184662022
+	timit_libri_val_cpc_1_max_rval_epoch -- 0
+	val_max_rval                   -- 0.8431205184662022
+------------------------------------------------------------------------------------------
+Epoch 1:  58% 249/426 [00:27<00:19,  9.18it/s, ------------------------------------------------------------------------------------------
+calculating metrics using 241 entries 7.67it/s]
+best peak detection params: (None, 0.04, None) (width, prominence, distance)
+	train_nfc_loss                 -- 0.2612547082481561
+	val_nfc_loss                   -- 0.544438656299345
+	epoch                          -- 1
+	current_lr                     -- 0.0002
+	timit_libri_val_cpc_1_f1       -- 0.8090486576122955
+	timit_libri_val_cpc_1_precision -- 0.8049693306944908
+	timit_libri_val_cpc_1_recall   -- 0.8131796424389086
+	timit_libri_val_cpc_1_rval     -- 0.8367937101283143
+	timit_libri_val_cpc_1_max_rval -- 0.8431205184662022
+	timit_libri_val_cpc_1_max_rval_epoch -- 0
+	val_max_rval                   -- 0.8431205184662022
+------------------------------------------------------------------------------------------
+Epoch 1:  80% 340/426 [00:39<00:09,  8.65it/s, loss=0.256, v_num=0]------------------------------------------------------------------------------------------
+calculating metrics using 241 entries 7.75it/s]
+best peak detection params: (None, 0.04, None) (width, prominence, distance)
+saving for test - cpc_1 - {'prominence': 0.04, 'width': None, 'distance': None, 'epoch': 0}
+	train_nfc_loss                 -- 0.25551777691752825
+	val_nfc_loss                   -- 0.5415689368401805
+	epoch                          -- 1
+	current_lr                     -- 0.0002
+	timit_libri_val_cpc_1_f1       -- 0.8262101023631406
+	timit_libri_val_cpc_1_precision -- 0.8189374005061153
+	timit_libri_val_cpc_1_recall   -- 0.8336233135780521
+	timit_libri_val_cpc_1_rval     -- 0.8511666041642476
+	timit_libri_val_cpc_1_max_rval -- 0.8511666041642476
+	timit_libri_val_cpc_1_max_rval_epoch -- 0
+	val_max_rval                   -- 0.8511666041642476
+------------------------------------------------------------------------------------------
+Epoch 1:  99% 420/426 [00:51<00:00,  8.20it/s, ------------------------------------------------------------------------------------------
+calculating metrics using 241 entries 7.72it/s]
+best peak detection params: (None, 0.05, None) (width, prominence, distance)
+saving for test - cpc_1 - {'prominence': 0.05, 'width': None, 'distance': None, 'epoch': 0}
+	train_nfc_loss                 -- 0.2623657653177226
+	val_nfc_loss                   -- 0.5407846887265483
+	epoch                          -- 1
+	current_lr                     -- 0.0002
+	timit_libri_val_cpc_1_f1       -- 0.8277689717934587
+	timit_libri_val_cpc_1_precision -- 0.8382785947471364
+	timit_libri_val_cpc_1_recall   -- 0.8175293597025561
+	timit_libri_val_cpc_1_rval     -- 0.852167237779252
+	timit_libri_val_cpc_1_max_rval -- 0.852167237779252
+	timit_libri_val_cpc_1_max_rval_epoch -- 0
+	val_max_rval                   -- 0.852167237779252
+------------------------------------------------------------------------------------------
+Epoch 2:  19% 80/426 [00:03<00:13, 25.14it/s, l------------------------------------------------------------------------------------------
+calculating metrics using 241 entries 7.70it/s]
+/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:23: RuntimeWarning: The metric you returned 0.852167237779252 must be a Torch.Tensor instance, checkpoint not saved HINT: what is the value of val_max_rval in validation_end()?
+  warnings.warn(*args, **kwargs)
+/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:23: RuntimeWarning: 0.852167237779252 is supposed to be a torch.Tensor. Saving checkpoint may not work correctly. HINT: check the value of val_max_rval in your validation loop
+  warnings.warn(*args, **kwargs)
+Epoch 00001: val_max_rval reached 0.85217 (best 0.85217), saving model to /home/bryce/PycharmProjects/UnsupSeg38/runs/2021-09-26_16-45-28-default/epoch=1.ckpt as top 1
+best peak detection params: (None, 0.06, None) (width, prominence, distance)
+	train_nfc_loss                 -- 0.2595162613825365
+	val_nfc_loss                   -- 0.5424695841727718
+	epoch                          -- 2
+	current_lr                     -- 0.0002
+	timit_libri_val_cpc_1_f1       -- 0.7997667309425581
+	timit_libri_val_cpc_1_precision -- 0.7998479574284884
+	timit_libri_val_cpc_1_recall   -- 0.7996955189216013
+	timit_libri_val_cpc_1_rval     -- 0.8290968115700222
+	timit_libri_val_cpc_1_max_rval -- 0.852167237779252
+	timit_libri_val_cpc_1_max_rval_epoch -- 0
+	val_max_rval                   -- 0.852167237779252
+------------------------------------------------------------------------------------------
+Epoch 2:  20% 85/426 [00:12<00:50,  6.75it/s, l[2021-09-26 16:46:48,078][lightning][INFO] -
+Epoch 00001: val_max_rval reached 0.85217 (best 0.85217), saving model to /home/bryce/PycharmProjects/UnsupSeg38/runs/2021-09-26_16-45-28-default/epoch=1.ckpt as top 1
+Epoch 2:  38% 160/426 [00:15<00:25, 10.45it/s, ------------------------------------------------------------------------------------------
+calculating metrics using 241 entries 7.50it/s]
+Epoch 2:  47% 202/426 [00:26<00:28,  7.73it/s, loss=0.262, v_num=0]----------------------------------------------------------------------
+Epoch 2:  56% 240/426 [00:27<00:21,  8.75it/s, ------------------------------------------------------------------------------------------
+                                               ------------------------------------------------------------------------------------------
+Validating:  48% 15/31 [00:00<00:02,  5.42it/s]------------------------------------------------------------------------------------------
+calculating metrics using 241 entries 7.63it/s]------------------------------------------------------------------------------------------
+calculating metrics using 241 entries 7.63it/s]------------------------------------------------------------------------------------------
+calculating metrics using 241 entries 7.63it/s]------------------------------------------------------------------------------------------
+best peak detection params: (None, 0.06, None) (width, prominence, distance)-------------------------------------------------------------
+best peak detection params: (None, 0.06, None) (width, prominence, distance)-------------------------------------------------------------
+best peak detection params: (None, 0.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 3.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 3.06, None) (width, prominence, distance)-------------------------------------------------------------
+/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:23: RuntimeWarning: The metric you returned 0.8599742650986189 must be a Torch.Tensor instance, checkpoint not saved HINT: what is the value of val_max_rval in validation_end()?
+  warnings.warn(*args, **kwargs)
+/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:23: RuntimeWarning: 0.8599742650986189 is supposed to be a torch.Tensor. Saving checkpoint may not work correctly. HINT: check the value of val_max_rval in your validation loop
+  warnings.warn(*args, **kwargs)
+Epoch 00002: val_max_rval reached 0.85997 (best 0.85997), saving model to /home/bryce/PycharmProjects/UnsupSeg38/runs/2021-09-26_16-45-28-default/epoch=2.ckpt as top 1
+	epoch                          -- 3.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 3.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 3.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 3.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 3.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 3.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 3.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 3.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 3.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 3.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 3.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 3.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 4.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 4.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 4.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 4.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 4.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 4.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 4.06, None) (width, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 4.06, None) (width, prominence, distance)-------------------------------------------------------------
+	val_nfc_loss                   -- 0.5405419093947257, prominence, distance)-------------------------------------------------------------
+	val_nfc_loss                   -- 0.5405419093947257, prominence, distance)-------------------------------------------------------------
+	val_nfc_loss                   -- 0.5405419093947257, prominence, distance)-------------------------------------------------------------
+/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:23: RuntimeWarning: The metric you returned 0.8639220303421001 must be a Torch.Tensor instance, checkpoint not saved HINT: what is the value of val_max_rval in validation_end()?
+  warnings.warn(*args, **kwargs)
+/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:23: RuntimeWarning: 0.8639220303421001 is supposed to be a torch.Tensor. Saving checkpoint may not work correctly. HINT: check the value of val_max_rval in your validation loop
+  warnings.warn(*args, **kwargs)
+	epoch                          -- 5.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 5.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 5.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 5.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 5.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 5.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 5.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 5.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 5.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 5.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 5.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 6.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 6.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 6.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 6.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 6.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 6.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 6.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 6.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 6.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 6.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 6.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 6.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 6.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 7.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 7.5405419093947257, prominence, distance)-------------------------------------------------------------
+Epoch 00006: val_max_rval  was not in top 1
+	epoch                          -- 7.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 7.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 7.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 7.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 7.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 7.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 7.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 7.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 7.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 7.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 7.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 7.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 8.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 8.5405419093947257, prominence, distance)-------------------------------------------------------------
+Epoch 00007: val_max_rval  was not in top 1
+	epoch                          -- 8.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 8.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 8.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 8.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 8.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 8.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 8.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 8.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 8.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 8.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 9.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 9.5405419093947257, prominence, distance)-------------------------------------------------------------
+Epoch 00008: val_max_rval  was not in top 1
+	epoch                          -- 9.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 9.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 9.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 9.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 9.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 9.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 9.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 9.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 9.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 9.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 9.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 9.5405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 105405419093947257, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 105405419093947257, prominence, distance)-------------------------------------------------------------
+Epoch 00009: val_max_rval  was not in top 1
+	val_nfc_loss                   -- 0.5395348860371497, prominence, distance)-------------------------------------------------------------
+	val_nfc_loss                   -- 0.5395348860371497, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 105395348860371497, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 105395348860371497, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 105395348860371497, prominence, distance)-------------------------------------------------------------
+	epoch                          -- 105395348860371497, prominence, distance)-------------------------------------------------------------
+)----------------------------------------------------------------------------------------------------------------------------------------
+)----------------------------------------------------------------------------------------------------------------------------------------
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/pytorch_lightning/utilities/distributed.py:23: RuntimeWarning: You passed  in a `test_dataloader` and have defined a `test_step()`, you may also want to define `test_epoch_end()` for accumulating stats.
+  warnings.warn(*args, **kwargs)
+)----------------------------------------------------------------------------------------------------------------------------------------
+/home/bryce/PycharmProjects/EnsemblePhoneme/UnsupSeg38/utils.py:169: RuntimeWarning: Mean of empty slice.
+  mean = data.mean()
+/home/bryce/anaconda3/envs/EnsemblePhoneme/lib/python3.8/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+Testing: 100% 200/200 [00:02<00:00, 68.55it/s] 252025------------------------------------------------------------------------------------
+Testing: 100% 200/200 [00:02<00:00, 68.55it/s] 252025------------------------------------------------------------------------------------

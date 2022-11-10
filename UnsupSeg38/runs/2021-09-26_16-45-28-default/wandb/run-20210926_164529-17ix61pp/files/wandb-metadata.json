@@ -1,0 +1,19 @@
+{
+    "os": "Linux-5.11.0-36-generic-x86_64-with-glibc2.17",
+    "python": "3.8.11",
+    "heartbeatAt": "2021-09-26T08:45:31.002256",
+    "startedAt": "2021-09-26T08:45:29.981026",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "data=timit_libri"
+    ],
+    "state": "running",
+    "program": "/home/bryce/PycharmProjects/EnsemblePhoneme/UnsupSeg38/main.py",
+    "host": "bryce-ubuntu",
+    "username": "bryce",
+    "executable": "/home/bryce/anaconda3/envs/EnsemblePhoneme/bin/python"
+}

@@ -1,0 +1,19 @@
+{
+    "os": "Linux-5.11.0-27-generic-x86_64-with-glibc2.17",
+    "python": "3.8.11",
+    "heartbeatAt": "2021-09-08T05:39:57.978886",
+    "startedAt": "2021-09-08T05:39:56.869663",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX TITAN X",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "data=timit"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "host": "bryce-ubuntu",
+    "username": "bryce",
+    "executable": "/home/bryce/anaconda3/envs/UnsupSeg38/bin/python"
+}

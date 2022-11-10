@@ -1,0 +1,24 @@
+2021-09-26 17:20:56,307 INFO    MainThread:101811 [wandb_setup.py:_flush():69] setting env: {}
+2021-09-26 17:20:56,307 INFO    MainThread:101811 [wandb_setup.py:_flush():69] setting login settings: {'api_key': 'e6fd4e6c17774ac3a2e5437c9a656241f8cd311d'}
+2021-09-26 17:20:56,307 INFO    MainThread:101811 [wandb_setup.py:_flush():69] setting login settings: {'api_key': 'e6fd4e6c17774ac3a2e5437c9a656241f8cd311d'}
+2021-09-26 17:20:56,307 INFO    MainThread:101811 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-09-26 17:20:56,308 INFO    MainThread:101811 [wandb_init.py:_log_setup():348] Logging user logs to /home/bryce/PycharmProjects/EnsemblePhoneme/UnsupSeg38/runs/2021-09-26_17-20-54-default/wandb/run-20210926_172056-334s8omb/logs/debug.log
+2021-09-26 17:20:56,308 INFO    MainThread:101811 [wandb_init.py:_log_setup():349] Logging internal logs to /home/bryce/PycharmProjects/EnsemblePhoneme/UnsupSeg38/runs/2021-09-26_17-20-54-default/wandb/run-20210926_172056-334s8omb/logs/debug-internal.log
+2021-09-26 17:20:56,309 INFO    MainThread:101811 [wandb_init.py:init():381] calling init triggers
+2021-09-26 17:20:56,309 INFO    MainThread:101811 [wandb_init.py:init():386] wandb.init called with sweep_config: {}
+config: {'libri_path': '/data/felix/datasets/librispeech', 'buckeye_path': '/data/felix/datasets/buckeye_processed_by_speaker_balanced', 'timit_path': '/home/bryce/PycharmProjects/EnsemblePhoneme/UnsupSeg38/imit_restructured', 'libri_subset': 'train-clean-100', 'libri_percent': 1.0, 'buckeye_percent': 1.0, 'val_ratio': 0.1, 'data': 'timit_libri', 'dataloader_n_workers': 10, 'cosine_coef': 1.0, 'z_proj': 64, 'z_proj_linear': True, 'z_proj_dropout': 0, 'z_dim': 256, 'pred_steps': 1, 'pred_offset': 0, 'batch_shuffle': False, 'latent_dim': 0, 'n_negatives': 1, 'gpus': 1, 'tag': 'default', 'exp_name': 'default', 'project': 'unsupervised_segmentor', 'ckpt': None, 'dev_run': False, 'val_check_interval': 0.2, 'overfit_pct': 1, 'seed': 100, 'early_stop_metric': 'val_max_rval', 'early_stop_mode': 'max', 'optimizer': 'adam', 'momentum': 0.9, 'lr': 0.0002, 'lr_anneal_gamma': 1.0, 'lr_anneal_step': 1000, 'epochs': 10, 'grad_clip': 0.5, 'batch_size': 8, 'wd': '/home/bryce/PycharmProjects/EnsemblePhoneme/UnsupSeg38/runs/2021-09-26_17-20-54-default', 'host': 'bryce-ubuntu'}
+2021-09-26 17:20:56,310 INFO    MainThread:101811 [wandb_init.py:init():430] starting backend
+2021-09-26 17:20:56,310 INFO    MainThread:101811 [backend.py:_multiprocessing_setup():70] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-09-26 17:20:56,317 INFO    MainThread:101811 [backend.py:ensure_launched():135] starting backend process...
+2021-09-26 17:20:56,321 INFO    MainThread:101811 [backend.py:ensure_launched():139] started backend process with pid: 101942
+2021-09-26 17:20:56,321 INFO    MainThread:101811 [wandb_init.py:init():435] backend started and connected
+2021-09-26 17:20:56,389 INFO    MainThread:101811 [wandb_init.py:init():494] updated telemetry
+2021-09-26 17:20:56,397 INFO    MainThread:101811 [wandb_init.py:init():517] communicating current version
+2021-09-26 17:20:57,095 INFO    MainThread:101811 [wandb_init.py:init():522] got version response 
+2021-09-26 17:20:57,095 INFO    MainThread:101811 [wandb_init.py:init():530] communicating run to backend with 30 second timeout
+2021-09-26 17:20:57,602 INFO    MainThread:101811 [wandb_init.py:init():557] starting run threads in backend
+2021-09-26 17:20:59,933 INFO    MainThread:101811 [wandb_run.py:_console_start():1605] atexit reg
+2021-09-26 17:20:59,935 INFO    MainThread:101811 [wandb_run.py:_redirect():1479] redirect: SettingsConsole.REDIRECT
+2021-09-26 17:20:59,935 INFO    MainThread:101811 [wandb_run.py:_redirect():1484] Redirecting console.
+2021-09-26 17:20:59,936 INFO    MainThread:101811 [wandb_run.py:_redirect():1540] Redirects installed.
+2021-09-26 17:20:59,936 INFO    MainThread:101811 [wandb_init.py:init():582] run started, returning control to user process

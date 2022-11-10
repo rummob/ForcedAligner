@@ -1,0 +1,425 @@
+[2021-09-08 13:39:55,689][lightning][INFO] - GPU available: True, used: True
+[2021-09-08 13:39:55,689][lightning][WARNING] - No environment variable for node rank defined. Set as 0.
+[2021-09-08 13:39:55,689][lightning][INFO] - CUDA_VISIBLE_DEVICES: [0]
+[2021-09-08 13:40:01,049][lightning][INFO] - 
+   | Name             | Type                | Params
+-----------------------------------------------------
+0  | NFC              | NextFrameClassifier | 1 M   
+1  | NFC.enc          | Sequential          | 1 M   
+2  | NFC.enc.0        | Conv1d              | 2 K   
+3  | NFC.enc.1        | BatchNorm1d         | 512   
+4  | NFC.enc.2        | LeakyReLU           | 0     
+5  | NFC.enc.3        | Conv1d              | 524 K 
+6  | NFC.enc.4        | BatchNorm1d         | 512   
+7  | NFC.enc.5        | LeakyReLU           | 0     
+8  | NFC.enc.6        | Conv1d              | 262 K 
+9  | NFC.enc.7        | BatchNorm1d         | 512   
+10 | NFC.enc.8        | LeakyReLU           | 0     
+11 | NFC.enc.9        | Conv1d              | 262 K 
+12 | NFC.enc.10       | BatchNorm1d         | 512   
+13 | NFC.enc.11       | LeakyReLU           | 0     
+14 | NFC.enc.12       | Conv1d              | 262 K 
+15 | NFC.enc.13       | LambdaLayer         | 0     
+16 | NFC.enc.z_proj   | Sequential          | 16 K  
+17 | NFC.enc.z_proj.0 | Dropout2d           | 0     
+18 | NFC.enc.z_proj.1 | Linear              | 16 K  
+[2021-09-08 13:40:13,480][lightning][INFO] - 
+Epoch 00000: val_max_rval reached 0.78366 (best 0.78366), saving model to /home/bryce/PycharmProjects/UnsupSeg38/runs/2021-09-08_13-39-55-default/epoch=0.ckpt as top 1
+[2021-09-08 13:41:19,496][lightning][INFO] - 
+Epoch 00001: val_max_rval reached 0.84638 (best 0.84638), saving model to /home/bryce/PycharmProjects/UnsupSeg38/runs/2021-09-08_13-39-55-default/epoch=1.ckpt as top 1
+[2021-09-08 13:42:25,350][lightning][INFO] - 
+Epoch 00002: val_max_rval reached 0.85962 (best 0.85962), saving model to /home/bryce/PycharmProjects/UnsupSeg38/runs/2021-09-08_13-39-55-default/epoch=2.ckpt as top 1
+[2021-09-08 13:43:31,185][lightning][INFO] - 
+Epoch 00003: val_max_rval  was not in top 1
+[2021-09-08 13:44:37,104][lightning][INFO] - 
+Epoch 00004: val_max_rval reached 0.86629 (best 0.86629), saving model to /home/bryce/PycharmProjects/UnsupSeg38/runs/2021-09-08_13-39-55-default/epoch=4.ckpt as top 1
+[2021-09-08 13:45:43,699][lightning][INFO] - 
+Epoch 00005: val_max_rval  was not in top 1
+[2021-09-08 13:46:50,197][lightning][INFO] - 
+Epoch 00006: val_max_rval  was not in top 1
+[2021-09-08 13:47:56,179][lightning][INFO] - 
+Epoch 00007: val_max_rval  was not in top 1
+[2021-09-08 13:49:02,081][lightning][INFO] - 
+Epoch 00008: val_max_rval  was not in top 1
+[2021-09-08 13:50:08,189][lightning][INFO] - 
+Epoch 00009: val_max_rval  was not in top 1
+[2021-09-08 13:51:14,363][lightning][INFO] - 
+Epoch 00010: val_max_rval  was not in top 1
+[2021-09-08 13:52:20,371][lightning][INFO] - 
+Epoch 00011: val_max_rval  was not in top 1
+[2021-09-08 13:53:26,102][lightning][INFO] - 
+Epoch 00012: val_max_rval  was not in top 1
+[2021-09-08 13:54:32,057][lightning][INFO] - 
+Epoch 00013: val_max_rval  was not in top 1
+[2021-09-08 13:55:39,150][lightning][INFO] - 
+Epoch 00014: val_max_rval  was not in top 1
+[2021-09-08 13:56:47,963][lightning][INFO] - 
+Epoch 00015: val_max_rval  was not in top 1
+[2021-09-08 13:57:56,189][lightning][INFO] - 
+Epoch 00016: val_max_rval  was not in top 1
+[2021-09-08 13:59:04,324][lightning][INFO] - 
+Epoch 00017: val_max_rval  was not in top 1
+[2021-09-08 14:00:11,163][lightning][INFO] - 
+Epoch 00018: val_max_rval  was not in top 1
+[2021-09-08 14:01:19,593][lightning][INFO] - 
+Epoch 00019: val_max_rval  was not in top 1
+[2021-09-08 14:02:29,240][lightning][INFO] - 
+Epoch 00020: val_max_rval  was not in top 1
+[2021-09-08 14:03:37,889][lightning][INFO] - 
+Epoch 00021: val_max_rval  was not in top 1
+[2021-09-08 14:04:46,392][lightning][INFO] - 
+Epoch 00022: val_max_rval  was not in top 1
+[2021-09-08 14:05:53,088][lightning][INFO] - 
+Epoch 00023: val_max_rval  was not in top 1
+[2021-09-08 14:07:01,152][lightning][INFO] - 
+Epoch 00024: val_max_rval  was not in top 1
+[2021-09-08 14:08:08,499][lightning][INFO] - 
+Epoch 00025: val_max_rval  was not in top 1
+[2021-09-08 14:09:15,388][lightning][INFO] - 
+Epoch 00026: val_max_rval  was not in top 1
+[2021-09-08 14:10:23,249][lightning][INFO] - 
+Epoch 00027: val_max_rval  was not in top 1
+[2021-09-08 14:11:32,449][lightning][INFO] - 
+Epoch 00028: val_max_rval  was not in top 1
+[2021-09-08 14:12:43,093][lightning][INFO] - 
+Epoch 00029: val_max_rval  was not in top 1
+[2021-09-08 14:13:55,530][lightning][INFO] - 
+Epoch 00030: val_max_rval  was not in top 1
+[2021-09-08 14:15:02,595][lightning][INFO] - 
+Epoch 00031: val_max_rval  was not in top 1
+[2021-09-08 14:16:10,713][lightning][INFO] - 
+Epoch 00032: val_max_rval  was not in top 1
+[2021-09-08 14:17:18,513][lightning][INFO] - 
+Epoch 00033: val_max_rval  was not in top 1
+[2021-09-08 14:18:26,387][lightning][INFO] - 
+Epoch 00034: val_max_rval  was not in top 1
+[2021-09-08 14:19:35,246][lightning][INFO] - 
+Epoch 00035: val_max_rval  was not in top 1
+[2021-09-08 14:20:42,725][lightning][INFO] - 
+Epoch 00036: val_max_rval  was not in top 1
+[2021-09-08 14:21:49,722][lightning][INFO] - 
+Epoch 00037: val_max_rval  was not in top 1
+[2021-09-08 14:22:57,216][lightning][INFO] - 
+Epoch 00038: val_max_rval  was not in top 1
+[2021-09-08 14:24:03,955][lightning][INFO] - 
+Epoch 00039: val_max_rval  was not in top 1
+[2021-09-08 14:25:12,264][lightning][INFO] - 
+Epoch 00040: val_max_rval  was not in top 1
+[2021-09-08 14:26:20,453][lightning][INFO] - 
+Epoch 00041: val_max_rval  was not in top 1
+[2021-09-08 14:27:25,731][lightning][INFO] - 
+Epoch 00042: val_max_rval  was not in top 1
+[2021-09-08 14:28:32,200][lightning][INFO] - 
+Epoch 00043: val_max_rval  was not in top 1
+[2021-09-08 14:29:37,752][lightning][INFO] - 
+Epoch 00044: val_max_rval  was not in top 1
+[2021-09-08 14:30:43,398][lightning][INFO] - 
+Epoch 00045: val_max_rval  was not in top 1
+[2021-09-08 14:31:48,474][lightning][INFO] - 
+Epoch 00046: val_max_rval  was not in top 1
+[2021-09-08 14:32:53,305][lightning][INFO] - 
+Epoch 00047: val_max_rval  was not in top 1
+[2021-09-08 14:33:59,190][lightning][INFO] - 
+Epoch 00048: val_max_rval  was not in top 1
+[2021-09-08 14:35:04,139][lightning][INFO] - 
+Epoch 00049: val_max_rval  was not in top 1
+[2021-09-08 14:36:09,570][lightning][INFO] - 
+Epoch 00050: val_max_rval  was not in top 1
+[2021-09-08 14:37:14,172][lightning][INFO] - 
+Epoch 00051: val_max_rval  was not in top 1
+[2021-09-08 14:38:19,719][lightning][INFO] - 
+Epoch 00052: val_max_rval  was not in top 1
+[2021-09-08 14:39:25,529][lightning][INFO] - 
+Epoch 00053: val_max_rval  was not in top 1
+[2021-09-08 14:40:31,755][lightning][INFO] - 
+Epoch 00054: val_max_rval  was not in top 1
+[2021-09-08 14:41:35,599][lightning][INFO] - 
+Epoch 00055: val_max_rval  was not in top 1
+[2021-09-08 14:42:40,099][lightning][INFO] - 
+Epoch 00056: val_max_rval  was not in top 1
+[2021-09-08 14:43:46,586][lightning][INFO] - 
+Epoch 00057: val_max_rval  was not in top 1
+[2021-09-08 14:44:52,861][lightning][INFO] - 
+Epoch 00058: val_max_rval  was not in top 1
+[2021-09-08 14:45:58,566][lightning][INFO] - 
+Epoch 00059: val_max_rval  was not in top 1
+[2021-09-08 14:47:02,349][lightning][INFO] - 
+Epoch 00060: val_max_rval  was not in top 1
+[2021-09-08 14:48:08,016][lightning][INFO] - 
+Epoch 00061: val_max_rval  was not in top 1
+[2021-09-08 14:49:12,928][lightning][INFO] - 
+Epoch 00062: val_max_rval  was not in top 1
+[2021-09-08 14:50:18,386][lightning][INFO] - 
+Epoch 00063: val_max_rval  was not in top 1
+[2021-09-08 14:51:24,426][lightning][INFO] - 
+Epoch 00064: val_max_rval  was not in top 1
+[2021-09-08 14:52:29,068][lightning][INFO] - 
+Epoch 00065: val_max_rval  was not in top 1
+[2021-09-08 14:53:33,211][lightning][INFO] - 
+Epoch 00066: val_max_rval  was not in top 1
+[2021-09-08 14:54:39,360][lightning][INFO] - 
+Epoch 00067: val_max_rval  was not in top 1
+[2021-09-08 14:55:44,551][lightning][INFO] - 
+Epoch 00068: val_max_rval  was not in top 1
+[2021-09-08 14:56:49,779][lightning][INFO] - 
+Epoch 00069: val_max_rval  was not in top 1
+[2021-09-08 14:57:56,343][lightning][INFO] - 
+Epoch 00070: val_max_rval  was not in top 1
+[2021-09-08 14:59:04,618][lightning][INFO] - 
+Epoch 00071: val_max_rval  was not in top 1
+[2021-09-08 15:00:12,370][lightning][INFO] - 
+Epoch 00072: val_max_rval  was not in top 1
+[2021-09-08 15:01:17,757][lightning][INFO] - 
+Epoch 00073: val_max_rval  was not in top 1
+[2021-09-08 15:02:25,521][lightning][INFO] - 
+Epoch 00074: val_max_rval  was not in top 1
+[2021-09-08 15:03:32,722][lightning][INFO] - 
+Epoch 00075: val_max_rval  was not in top 1
+[2021-09-08 15:04:39,534][lightning][INFO] - 
+Epoch 00076: val_max_rval  was not in top 1
+[2021-09-08 15:05:47,118][lightning][INFO] - 
+Epoch 00077: val_max_rval  was not in top 1
+[2021-09-08 15:06:55,252][lightning][INFO] - 
+Epoch 00078: val_max_rval  was not in top 1
+[2021-09-08 15:08:01,061][lightning][INFO] - 
+Epoch 00079: val_max_rval  was not in top 1
+[2021-09-08 15:09:09,267][lightning][INFO] - 
+Epoch 00080: val_max_rval  was not in top 1
+[2021-09-08 15:10:18,574][lightning][INFO] - 
+Epoch 00081: val_max_rval  was not in top 1
+[2021-09-08 15:11:25,180][lightning][INFO] - 
+Epoch 00082: val_max_rval  was not in top 1
+[2021-09-08 15:12:31,998][lightning][INFO] - 
+Epoch 00083: val_max_rval  was not in top 1
+[2021-09-08 15:13:37,511][lightning][INFO] - 
+Epoch 00084: val_max_rval  was not in top 1
+[2021-09-08 15:14:43,515][lightning][INFO] - 
+Epoch 00085: val_max_rval  was not in top 1
+[2021-09-08 15:15:52,048][lightning][INFO] - 
+Epoch 00086: val_max_rval  was not in top 1
+[2021-09-08 15:17:00,690][lightning][INFO] - 
+Epoch 00087: val_max_rval  was not in top 1
+[2021-09-08 15:18:08,505][lightning][INFO] - 
+Epoch 00088: val_max_rval  was not in top 1
+[2021-09-08 15:19:16,965][lightning][INFO] - 
+Epoch 00089: val_max_rval  was not in top 1
+[2021-09-08 15:20:23,028][lightning][INFO] - 
+Epoch 00090: val_max_rval  was not in top 1
+[2021-09-08 15:21:29,427][lightning][INFO] - 
+Epoch 00091: val_max_rval  was not in top 1
+[2021-09-08 15:22:36,990][lightning][INFO] - 
+Epoch 00092: val_max_rval  was not in top 1
+[2021-09-08 15:23:43,635][lightning][INFO] - 
+Epoch 00093: val_max_rval  was not in top 1
+[2021-09-08 15:24:53,624][lightning][INFO] - 
+Epoch 00094: val_max_rval  was not in top 1
+[2021-09-08 15:26:00,824][lightning][INFO] - 
+Epoch 00095: val_max_rval  was not in top 1
+[2021-09-08 15:27:06,359][lightning][INFO] - 
+Epoch 00096: val_max_rval  was not in top 1
+[2021-09-08 15:28:11,664][lightning][INFO] - 
+Epoch 00097: val_max_rval  was not in top 1
+[2021-09-08 15:29:17,126][lightning][INFO] - 
+Epoch 00098: val_max_rval  was not in top 1
+[2021-09-08 15:30:22,192][lightning][INFO] - 
+Epoch 00099: val_max_rval  was not in top 1
+[2021-09-08 15:31:25,632][lightning][INFO] - 
+Epoch 00100: val_max_rval  was not in top 1
+[2021-09-08 15:32:30,623][lightning][INFO] - 
+Epoch 00101: val_max_rval  was not in top 1
+[2021-09-08 15:33:35,466][lightning][INFO] - 
+Epoch 00102: val_max_rval  was not in top 1
+[2021-09-08 15:34:42,291][lightning][INFO] - 
+Epoch 00103: val_max_rval  was not in top 1
+[2021-09-08 15:35:48,409][lightning][INFO] - 
+Epoch 00104: val_max_rval  was not in top 1
+[2021-09-08 15:36:55,691][lightning][INFO] - 
+Epoch 00105: val_max_rval  was not in top 1
+[2021-09-08 15:38:01,831][lightning][INFO] - 
+Epoch 00106: val_max_rval  was not in top 1
+[2021-09-08 15:39:08,818][lightning][INFO] - 
+Epoch 00107: val_max_rval  was not in top 1
+[2021-09-08 15:40:16,701][lightning][INFO] - 
+Epoch 00108: val_max_rval  was not in top 1
+[2021-09-08 15:41:23,169][lightning][INFO] - 
+Epoch 00109: val_max_rval  was not in top 1
+[2021-09-08 15:42:30,095][lightning][INFO] - 
+Epoch 00110: val_max_rval  was not in top 1
+[2021-09-08 15:43:37,626][lightning][INFO] - 
+Epoch 00111: val_max_rval  was not in top 1
+[2021-09-08 15:44:44,305][lightning][INFO] - 
+Epoch 00112: val_max_rval  was not in top 1
+[2021-09-08 15:45:51,013][lightning][INFO] - 
+Epoch 00113: val_max_rval  was not in top 1
+[2021-09-08 15:46:59,291][lightning][INFO] - 
+Epoch 00114: val_max_rval  was not in top 1
+[2021-09-08 15:48:07,439][lightning][INFO] - 
+Epoch 00115: val_max_rval  was not in top 1
+[2021-09-08 15:49:14,552][lightning][INFO] - 
+Epoch 00116: val_max_rval  was not in top 1
+[2021-09-08 15:50:21,244][lightning][INFO] - 
+Epoch 00117: val_max_rval  was not in top 1
+[2021-09-08 15:51:27,529][lightning][INFO] - 
+Epoch 00118: val_max_rval  was not in top 1
+[2021-09-08 15:52:34,176][lightning][INFO] - 
+Epoch 00119: val_max_rval  was not in top 1
+[2021-09-08 15:53:40,032][lightning][INFO] - 
+Epoch 00120: val_max_rval  was not in top 1
+[2021-09-08 15:54:46,278][lightning][INFO] - 
+Epoch 00121: val_max_rval  was not in top 1
+[2021-09-08 15:55:51,926][lightning][INFO] - 
+Epoch 00122: val_max_rval  was not in top 1
+[2021-09-08 15:56:58,925][lightning][INFO] - 
+Epoch 00123: val_max_rval  was not in top 1
+[2021-09-08 15:58:03,896][lightning][INFO] - 
+Epoch 00124: val_max_rval  was not in top 1
+[2021-09-08 15:59:10,923][lightning][INFO] - 
+Epoch 00125: val_max_rval  was not in top 1
+[2021-09-08 16:00:16,888][lightning][INFO] - 
+Epoch 00126: val_max_rval  was not in top 1
+[2021-09-08 16:01:22,859][lightning][INFO] - 
+Epoch 00127: val_max_rval  was not in top 1
+[2021-09-08 16:02:29,488][lightning][INFO] - 
+Epoch 00128: val_max_rval  was not in top 1
+[2021-09-08 16:03:35,632][lightning][INFO] - 
+Epoch 00129: val_max_rval  was not in top 1
+[2021-09-08 16:04:41,894][lightning][INFO] - 
+Epoch 00130: val_max_rval  was not in top 1
+[2021-09-08 16:05:46,501][lightning][INFO] - 
+Epoch 00131: val_max_rval  was not in top 1
+[2021-09-08 16:06:51,026][lightning][INFO] - 
+Epoch 00132: val_max_rval  was not in top 1
+[2021-09-08 16:07:57,922][lightning][INFO] - 
+Epoch 00133: val_max_rval  was not in top 1
+[2021-09-08 16:09:03,383][lightning][INFO] - 
+Epoch 00134: val_max_rval  was not in top 1
+[2021-09-08 16:10:08,386][lightning][INFO] - 
+Epoch 00135: val_max_rval  was not in top 1
+[2021-09-08 16:11:13,988][lightning][INFO] - 
+Epoch 00136: val_max_rval  was not in top 1
+[2021-09-08 16:12:18,948][lightning][INFO] - 
+Epoch 00137: val_max_rval  was not in top 1
+[2021-09-08 16:13:23,830][lightning][INFO] - 
+Epoch 00138: val_max_rval  was not in top 1
+[2021-09-08 16:14:30,475][lightning][INFO] - 
+Epoch 00139: val_max_rval  was not in top 1
+[2021-09-08 16:15:37,531][lightning][INFO] - 
+Epoch 00140: val_max_rval  was not in top 1
+[2021-09-08 16:16:44,074][lightning][INFO] - 
+Epoch 00141: val_max_rval  was not in top 1
+[2021-09-08 16:17:50,629][lightning][INFO] - 
+Epoch 00142: val_max_rval  was not in top 1
+[2021-09-08 16:18:58,104][lightning][INFO] - 
+Epoch 00143: val_max_rval  was not in top 1
+[2021-09-08 16:20:05,397][lightning][INFO] - 
+Epoch 00144: val_max_rval  was not in top 1
+[2021-09-08 16:21:15,393][lightning][INFO] - 
+Epoch 00145: val_max_rval  was not in top 1
+[2021-09-08 16:22:24,380][lightning][INFO] - 
+Epoch 00146: val_max_rval  was not in top 1
+[2021-09-08 16:23:32,923][lightning][INFO] - 
+Epoch 00147: val_max_rval  was not in top 1
+[2021-09-08 16:24:43,449][lightning][INFO] - 
+Epoch 00148: val_max_rval  was not in top 1
+[2021-09-08 16:25:51,003][lightning][INFO] - 
+Epoch 00149: val_max_rval  was not in top 1
+[2021-09-08 16:26:57,045][lightning][INFO] - 
+Epoch 00150: val_max_rval  was not in top 1
+[2021-09-08 16:28:03,954][lightning][INFO] - 
+Epoch 00151: val_max_rval  was not in top 1
+[2021-09-08 16:29:09,336][lightning][INFO] - 
+Epoch 00152: val_max_rval  was not in top 1
+[2021-09-08 16:30:14,673][lightning][INFO] - 
+Epoch 00153: val_max_rval  was not in top 1
+[2021-09-08 16:31:19,236][lightning][INFO] - 
+Epoch 00154: val_max_rval  was not in top 1
+[2021-09-08 16:32:25,274][lightning][INFO] - 
+Epoch 00155: val_max_rval  was not in top 1
+[2021-09-08 16:33:30,507][lightning][INFO] - 
+Epoch 00156: val_max_rval  was not in top 1
+[2021-09-08 16:34:37,024][lightning][INFO] - 
+Epoch 00157: val_max_rval  was not in top 1
+[2021-09-08 16:35:44,465][lightning][INFO] - 
+Epoch 00158: val_max_rval  was not in top 1
+[2021-09-08 16:36:51,030][lightning][INFO] - 
+Epoch 00159: val_max_rval  was not in top 1
+[2021-09-08 16:37:57,062][lightning][INFO] - 
+Epoch 00160: val_max_rval  was not in top 1
+[2021-09-08 16:39:02,307][lightning][INFO] - 
+Epoch 00161: val_max_rval  was not in top 1
+[2021-09-08 16:40:07,766][lightning][INFO] - 
+Epoch 00162: val_max_rval  was not in top 1
+[2021-09-08 16:41:13,538][lightning][INFO] - 
+Epoch 00163: val_max_rval  was not in top 1
+[2021-09-08 16:42:17,761][lightning][INFO] - 
+Epoch 00164: val_max_rval  was not in top 1
+[2021-09-08 16:43:23,633][lightning][INFO] - 
+Epoch 00165: val_max_rval  was not in top 1
+[2021-09-08 16:44:28,226][lightning][INFO] - 
+Epoch 00166: val_max_rval  was not in top 1
+[2021-09-08 16:45:34,441][lightning][INFO] - 
+Epoch 00167: val_max_rval  was not in top 1
+[2021-09-08 16:46:40,912][lightning][INFO] - 
+Epoch 00168: val_max_rval  was not in top 1
+[2021-09-08 16:47:46,557][lightning][INFO] - 
+Epoch 00169: val_max_rval  was not in top 1
+[2021-09-08 16:48:51,430][lightning][INFO] - 
+Epoch 00170: val_max_rval  was not in top 1
+[2021-09-08 16:49:56,964][lightning][INFO] - 
+Epoch 00171: val_max_rval  was not in top 1
+[2021-09-08 16:51:03,440][lightning][INFO] - 
+Epoch 00172: val_max_rval  was not in top 1
+[2021-09-08 16:52:09,699][lightning][INFO] - 
+Epoch 00173: val_max_rval  was not in top 1
+[2021-09-08 16:53:16,607][lightning][INFO] - 
+Epoch 00174: val_max_rval  was not in top 1
+[2021-09-08 16:54:23,972][lightning][INFO] - 
+Epoch 00175: val_max_rval  was not in top 1
+[2021-09-08 16:55:32,267][lightning][INFO] - 
+Epoch 00176: val_max_rval  was not in top 1
+[2021-09-08 16:56:39,054][lightning][INFO] - 
+Epoch 00177: val_max_rval  was not in top 1
+[2021-09-08 16:57:45,110][lightning][INFO] - 
+Epoch 00178: val_max_rval  was not in top 1
+[2021-09-08 16:58:53,982][lightning][INFO] - 
+Epoch 00179: val_max_rval  was not in top 1
+[2021-09-08 17:00:01,670][lightning][INFO] - 
+Epoch 00180: val_max_rval  was not in top 1
+[2021-09-08 17:01:09,299][lightning][INFO] - 
+Epoch 00181: val_max_rval  was not in top 1
+[2021-09-08 17:02:14,756][lightning][INFO] - 
+Epoch 00182: val_max_rval  was not in top 1
+[2021-09-08 17:03:22,136][lightning][INFO] - 
+Epoch 00183: val_max_rval  was not in top 1
+[2021-09-08 17:04:26,832][lightning][INFO] - 
+Epoch 00184: val_max_rval  was not in top 1
+[2021-09-08 17:05:33,254][lightning][INFO] - 
+Epoch 00185: val_max_rval  was not in top 1
+[2021-09-08 17:06:39,326][lightning][INFO] - 
+Epoch 00186: val_max_rval  was not in top 1
+[2021-09-08 17:07:46,480][lightning][INFO] - 
+Epoch 00187: val_max_rval  was not in top 1
+[2021-09-08 17:08:49,934][lightning][INFO] - 
+Epoch 00188: val_max_rval  was not in top 1
+[2021-09-08 17:09:54,101][lightning][INFO] - 
+Epoch 00189: val_max_rval  was not in top 1
+[2021-09-08 17:10:58,446][lightning][INFO] - 
+Epoch 00190: val_max_rval  was not in top 1
+[2021-09-08 17:12:03,606][lightning][INFO] - 
+Epoch 00191: val_max_rval  was not in top 1
+[2021-09-08 17:13:10,448][lightning][INFO] - 
+Epoch 00192: val_max_rval  was not in top 1
+[2021-09-08 17:14:18,002][lightning][INFO] - 
+Epoch 00193: val_max_rval  was not in top 1
+[2021-09-08 17:15:21,985][lightning][INFO] - 
+Epoch 00194: val_max_rval  was not in top 1
+[2021-09-08 17:16:28,402][lightning][INFO] - 
+Epoch 00195: val_max_rval  was not in top 1
+[2021-09-08 17:17:33,336][lightning][INFO] - 
+Epoch 00196: val_max_rval  was not in top 1
+[2021-09-08 17:18:39,789][lightning][INFO] - 
+Epoch 00197: val_max_rval  was not in top 1
+[2021-09-08 17:19:44,544][lightning][INFO] - 
+Epoch 00198: val_max_rval  was not in top 1
+[2021-09-08 17:20:50,737][lightning][INFO] - 
+Epoch 00199: val_max_rval  was not in top 1

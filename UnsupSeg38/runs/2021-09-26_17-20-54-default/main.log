@@ -1,0 +1,25 @@
+[2021-09-26 17:20:54,686][lightning][INFO] - GPU available: True, used: True
+[2021-09-26 17:20:54,686][lightning][WARNING] - No environment variable for node rank defined. Set as 0.
+[2021-09-26 17:20:54,686][lightning][INFO] - CUDA_VISIBLE_DEVICES: [0]
+[2021-09-26 17:21:01,574][lightning][INFO] - 
+   | Name             | Type                | Params
+-----------------------------------------------------
+0  | NFC              | NextFrameClassifier | 1 M   
+1  | NFC.enc          | Sequential          | 1 M   
+2  | NFC.enc.0        | Conv1d              | 2 K   
+3  | NFC.enc.1        | BatchNorm1d         | 512   
+4  | NFC.enc.2        | LeakyReLU           | 0     
+5  | NFC.enc.3        | Conv1d              | 524 K 
+6  | NFC.enc.4        | BatchNorm1d         | 512   
+7  | NFC.enc.5        | LeakyReLU           | 0     
+8  | NFC.enc.6        | Conv1d              | 262 K 
+9  | NFC.enc.7        | BatchNorm1d         | 512   
+10 | NFC.enc.8        | LeakyReLU           | 0     
+11 | NFC.enc.9        | Conv1d              | 262 K 
+12 | NFC.enc.10       | BatchNorm1d         | 512   
+13 | NFC.enc.11       | LeakyReLU           | 0     
+14 | NFC.enc.12       | Conv1d              | 262 K 
+15 | NFC.enc.13       | LambdaLayer         | 0     
+16 | NFC.enc.z_proj   | Sequential          | 16 K  
+17 | NFC.enc.z_proj.0 | Dropout2d           | 0     
+18 | NFC.enc.z_proj.1 | Linear              | 16 K  

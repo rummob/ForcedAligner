@@ -1,0 +1,195 @@
+2021-09-08 17:21:42,066 INFO    MainThread:111045 [wandb_setup.py:_flush():69] setting env: {}
+2021-09-08 17:21:42,066 WARNING MainThread:111045 [wandb_setup.py:_flush():69] could not save program above cwd: /home/bryce/PycharmProjects/UnsupSeg38/main.py
+2021-09-08 17:21:42,066 INFO    MainThread:111045 [wandb_setup.py:_flush():69] setting login settings: {'api_key': 'e6fd4e6c17774ac3a2e5437c9a656241f8cd311d'}
+2021-09-08 17:21:42,066 INFO    MainThread:111045 [wandb_setup.py:_flush():69] setting login settings: {'api_key': 'e6fd4e6c17774ac3a2e5437c9a656241f8cd311d'}
+2021-09-08 17:21:42,066 INFO    MainThread:111045 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-09-08 17:21:42,066 INFO    MainThread:111045 [wandb_init.py:_log_setup():342] Logging user logs to /home/bryce/PycharmProjects/UnsupSeg38/runs/2021-09-08_13-39-55-default/wandb/run-20210908_172142-4vv8dago/logs/debug.log
+2021-09-08 17:21:42,066 INFO    MainThread:111045 [wandb_init.py:_log_setup():343] Logging internal logs to /home/bryce/PycharmProjects/UnsupSeg38/runs/2021-09-08_13-39-55-default/wandb/run-20210908_172142-4vv8dago/logs/debug-internal.log
+2021-09-08 17:21:42,069 INFO    MainThread:111045 [wandb_init.py:init():375] calling init triggers
+2021-09-08 17:21:42,069 INFO    MainThread:111045 [wandb_init.py:init():380] wandb.init called with sweep_config: {}
+config: {'libri_path': '/data/felix/datasets/librispeech', 'buckeye_path': '/data/felix/datasets/buckeye_processed_by_speaker_balanced', 'timit_path': '/home/bryce/PycharmProjects/UnsupSeg38/timit_restructured', 'libri_subset': 'train-clean-100', 'libri_percent': 1.0, 'buckeye_percent': 1.0, 'val_ratio': 0.1, 'data': 'timit', 'dataloader_n_workers': 10, 'cosine_coef': 1.0, 'z_proj': 64, 'z_proj_linear': True, 'z_proj_dropout': 0, 'z_dim': 256, 'pred_steps': 1, 'pred_offset': 0, 'batch_shuffle': False, 'latent_dim': 0, 'n_negatives': 1, 'gpus': 1, 'tag': 'default', 'exp_name': 'default', 'project': 'unsupervised_segmentor', 'ckpt': None, 'dev_run': False, 'val_check_interval': 0.2, 'overfit_pct': 1, 'seed': 100, 'early_stop_metric': 'val_max_rval', 'early_stop_mode': 'max', 'optimizer': 'adam', 'momentum': 0.9, 'lr': 0.0002, 'lr_anneal_gamma': 1.0, 'lr_anneal_step': 1000, 'epochs': 200, 'grad_clip': 0.5, 'batch_size': 8, 'wd': '/home/bryce/PycharmProjects/UnsupSeg38/runs/2021-09-08_13-39-55-default', 'host': 'bryce-ubuntu'}
+2021-09-08 17:21:42,071 INFO    MainThread:111045 [wandb_init.py:init():421] wandb.init() called when a run is still active
+2021-09-08 17:21:47,105 INFO    MainThread:111045 [wandb_run.py:_atexit_cleanup():1554] got exitcode: 0
+2021-09-08 17:21:47,105 INFO    MainThread:111045 [wandb_run.py:_restore():1526] restore
+2021-09-08 17:21:49,915 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 536
+  total_bytes: 536
+}
+
+2021-09-08 17:21:50,430 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 536
+  total_bytes: 536
+}
+
+2021-09-08 17:21:50,723 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 536
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:50,828 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 536
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:50,932 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 536
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:51,036 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 536
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:51,141 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 536
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:51,245 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 536
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:51,349 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 85993
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:51,454 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 85993
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:51,558 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 612563
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:51,663 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 612563
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:51,768 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 612563
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:51,872 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 614668
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:51,977 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 614668
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:52,081 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 619758
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:52,186 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 619758
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:52,291 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 619758
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:52,395 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 619758
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:52,500 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 619758
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:53,139 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 619758
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:53,244 INFO    MainThread:111045 [wandb_run.py:_wait_for_finish():1676] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 619758
+  total_bytes: 619758
+}
+
+2021-09-08 17:21:54,310 INFO    MainThread:111045 [wandb_run.py:_show_summary():1831] rendering summary
+2021-09-08 17:21:54,312 INFO    MainThread:111045 [wandb_run.py:_show_history():1869] rendering history
+2021-09-08 17:21:54,315 INFO    MainThread:111045 [wandb_run.py:_show_files():1898] logging synced files

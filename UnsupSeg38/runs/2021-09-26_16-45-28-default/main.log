@@ -1,0 +1,45 @@
+[2021-09-26 16:45:28,374][lightning][INFO] - GPU available: True, used: True
+[2021-09-26 16:45:28,374][lightning][WARNING] - No environment variable for node rank defined. Set as 0.
+[2021-09-26 16:45:28,374][lightning][INFO] - CUDA_VISIBLE_DEVICES: [0]
+[2021-09-26 16:45:34,889][lightning][INFO] - 
+   | Name             | Type                | Params
+-----------------------------------------------------
+0  | NFC              | NextFrameClassifier | 1 M   
+1  | NFC.enc          | Sequential          | 1 M   
+2  | NFC.enc.0        | Conv1d              | 2 K   
+3  | NFC.enc.1        | BatchNorm1d         | 512   
+4  | NFC.enc.2        | LeakyReLU           | 0     
+5  | NFC.enc.3        | Conv1d              | 524 K 
+6  | NFC.enc.4        | BatchNorm1d         | 512   
+7  | NFC.enc.5        | LeakyReLU           | 0     
+8  | NFC.enc.6        | Conv1d              | 262 K 
+9  | NFC.enc.7        | BatchNorm1d         | 512   
+10 | NFC.enc.8        | LeakyReLU           | 0     
+11 | NFC.enc.9        | Conv1d              | 262 K 
+12 | NFC.enc.10       | BatchNorm1d         | 512   
+13 | NFC.enc.11       | LeakyReLU           | 0     
+14 | NFC.enc.12       | Conv1d              | 262 K 
+15 | NFC.enc.13       | LambdaLayer         | 0     
+16 | NFC.enc.z_proj   | Sequential          | 16 K  
+17 | NFC.enc.z_proj.0 | Dropout2d           | 0     
+18 | NFC.enc.z_proj.1 | Linear              | 16 K  
+[2021-09-26 16:45:46,951][lightning][INFO] - 
+Epoch 00000: val_max_rval reached 0.78909 (best 0.78909), saving model to /home/bryce/PycharmProjects/UnsupSeg38/runs/2021-09-26_16-45-28-default/epoch=0.ckpt as top 1
+[2021-09-26 16:46:48,078][lightning][INFO] - 
+Epoch 00001: val_max_rval reached 0.85217 (best 0.85217), saving model to /home/bryce/PycharmProjects/UnsupSeg38/runs/2021-09-26_16-45-28-default/epoch=1.ckpt as top 1
+[2021-09-26 16:47:49,609][lightning][INFO] - 
+Epoch 00002: val_max_rval reached 0.85997 (best 0.85997), saving model to /home/bryce/PycharmProjects/UnsupSeg38/runs/2021-09-26_16-45-28-default/epoch=2.ckpt as top 1
+[2021-09-26 16:48:50,669][lightning][INFO] - 
+Epoch 00003: val_max_rval  was not in top 1
+[2021-09-26 16:49:51,314][lightning][INFO] - 
+Epoch 00004: val_max_rval reached 0.86392 (best 0.86392), saving model to /home/bryce/PycharmProjects/UnsupSeg38/runs/2021-09-26_16-45-28-default/epoch=4.ckpt as top 1
+[2021-09-26 16:50:52,220][lightning][INFO] - 
+Epoch 00005: val_max_rval  was not in top 1
+[2021-09-26 16:51:54,048][lightning][INFO] - 
+Epoch 00006: val_max_rval  was not in top 1
+[2021-09-26 16:52:53,996][lightning][INFO] - 
+Epoch 00007: val_max_rval  was not in top 1
+[2021-09-26 16:53:54,336][lightning][INFO] - 
+Epoch 00008: val_max_rval  was not in top 1
+[2021-09-26 16:54:55,759][lightning][INFO] - 
+Epoch 00009: val_max_rval  was not in top 1
